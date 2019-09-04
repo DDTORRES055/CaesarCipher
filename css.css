@@ -6,6 +6,7 @@
 body{
     background-color: #000;
     font-family: helvetica;
+    align-items: center;
 }
 
 #header{
@@ -15,16 +16,16 @@ body{
     font-size: 80px;
 }
 
-#input {
+#input, #output {
     text-align: center;
 }
 
-#textbox{
-    font-size: 100px;
+.textbox{
     width: 90%;
     height: 120px;
     border: 0;
     padding: 0;
+    font-size: 100px;
     margin-bottom: 100px;
     text-align: center;
     color: #060;

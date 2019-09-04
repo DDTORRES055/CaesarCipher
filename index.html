@@ -10,11 +10,13 @@
 <body>
     <div id="header">Hi, let's to encrypt a text</div>
     <div id="input">
-        <textarea type="text" id="textbox" placeholder="Put your text here" oninput="autoResize()"></textarea>
+        <textarea type="text" id="textboxInput" class="textbox" placeholder="Put your text here" oninput="autoResize()"></textarea>
         <br/>
-        <input type="button" name="button" id="button" value="Encrypt the text">
+        <input type="button" name="button" id="button" value="Encrypt the text" onclick="cipherText()">
     </div>
-    <div id="output">Text encrypted</div>
+    <div id="output">
+        <textarea type="text" id="textboxOutput" class="textbox" readonly="true" oninput="autoResize()"></textarea>
+    </div>
 
     <script src="js.js"></script>
 </body>
