@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+#header{
+    color: #060;
+    padding: 10%;
+    text-align: center;
+}
+
+#input {
+    text-align: center;
+}
+
+#textbox{
+    font-size: 100px;
+    width: 90%;
+    border: 0;
+    text-align: center;
+    color: #060;
+    background-color: #0001;
+    caret-color: #060;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+}
