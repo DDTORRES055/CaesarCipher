@@ -5,12 +5,14 @@
 
 body{
     background-color: #000;
+    font-family: helvetica;
 }
 
 #header{
-    color: #060;
+    color: #33e;
     padding: 10%;
     text-align: center;
+    font-size: 80px;
 }
 
 #input {
@@ -20,12 +22,40 @@ body{
 #textbox{
     font-size: 100px;
     width: 90%;
+    height: 120px;
     border: 0;
+    padding: 0;
+    margin-bottom: 100px;
     text-align: center;
     color: #060;
-    background-color: #0001;
+    background-color: #0000;
     caret-color: #060;
     resize: none;
     outline: none;
     overflow: hidden;
+}
+
+#button{
+    padding: 15px;
+    font-size: 30px;
+    display: none;
+    background-color: #0000;
+    color: #060;
+    border: solid;
+    border-radius: 5px;
+    border-color: #060;
+    outline: none;
+}
+
+#button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #080;
+    border-color: #0000;
+}
+
+#button:active{
+    color: #fff;
+    background-color: #050;
+    border-color: #0000;
 }

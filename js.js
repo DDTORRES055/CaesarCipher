@@ -1,8 +1,12 @@
 function autoResize() {
-    document.getElementById('textbox').style.height = "100px";
-    document.getElementById('textbox').style.height = document.getElementById('textbox').scrollHeight + 'px';
-    /* var box = document.getElementById('textbox');
+    var textbox = document.getElementById('textbox');
+    var button = document.getElementById('button');
 
-    console.log(box.scrollHeight);
-    console.log(box.style); */
+    textbox.style.height = "100px";
+    textbox.style.height = textbox.scrollHeight + 'px';
+
+    if(textbox.value === "")
+        button.style.display = "none";
+    else
+        button.style.display = "inline";
 }
