@@ -3,10 +3,10 @@ function autoResize() {
     var textboxOutput = document.getElementById('textboxOutput');
     var button = document.getElementById('button');
 
-    textboxInput.style.height = "100px";
+    textboxInput.style.height = "90px";
     textboxInput.style.height = textboxInput.scrollHeight + 'px';
 
-    textboxOutput.style.height = "100px";
+    textboxOutput.style.height = "90px";
     textboxOutput.style.height = textboxOutput.scrollHeight + 'px';
 
     if(textboxInput.value === "")
