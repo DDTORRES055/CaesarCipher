@@ -15,11 +15,11 @@ function autoResize() {
         button.style.display = "inline";
 }
 
-function cipherText() {
-    var shift = 20;
+async function cipherText() {
     var text = document.getElementById('textboxInput').value;
-    var textEncrypted = "";
     var textboxOutput = document.getElementById('textboxOutput');
+    var textEncrypted = "";
+    var shift = 20;
 
     for (let i = 0; i < text.length; i++) {
         let charNumber = text.charAt(i).charCodeAt();
@@ -37,9 +37,17 @@ function cipherText() {
                 textboxOutput.value = textEncrypted + String.fromCharCode(charNumber);
             }
             else{
-                textboxOutput.value += text.charAt(i);
+                textboxOutput.value = textEncrypted + text.charAt(i);
             }
+            await sleep(50);
         }
-        textEncrypted += String.fromCharCode(charNumber)
+        textEncrypted += String.fromCharCode(charNumber);
+        autoResize();
+
+        window.scrollBy(0, document.body.scrollHeight);
     }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
