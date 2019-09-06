@@ -16,6 +16,9 @@ function autoResize() {
 }
 
 async function cipherText() {
+    var button = document.getElementById('button');
+    button.setAttribute("disabled","true");
+
     var text = document.getElementById('textboxInput').value;
     var textboxOutput = document.getElementById('textboxOutput');
     var textEncrypted = "";
@@ -46,6 +49,8 @@ async function cipherText() {
 
         window.scrollBy(0, document.body.scrollHeight);
     }
+
+    button.removeAttribute("disabled");
 }
 
 function sleep(ms) {
